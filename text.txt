@@ -1,0 +1,1 @@
+    fetch(`http://localhost:3000/product?_page=${data}&_limit=2`)

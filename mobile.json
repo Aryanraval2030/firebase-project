@@ -1,0 +1,209 @@
+{
+  "mobiles": [
+    {
+      "id": 1,
+      "title": "iPhone 15 Pro",
+      "brand": "Apple",
+      "price": 134900,
+      "category": "Premium",
+      "stock": 12,
+      "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569"
+    },
+    {
+      "id": 2,
+      "title": "Samsung Galaxy S24",
+      "brand": "Samsung",
+      "price": 79999,
+      "category": "Flagship",
+      "stock": 18,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf"
+    },
+    {
+      "id": 3,
+      "title": "OnePlus 12",
+      "brand": "OnePlus",
+      "price": 64999,
+      "category": "Flagship",
+      "stock": 15,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1585060544812-6b45742d762f"
+    },
+    {
+      "id": 4,
+      "title": "Xiaomi 14",
+      "brand": "Xiaomi",
+      "price": 59999,
+      "category": "Flagship",
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97"
+    },
+    {
+      "id": 5,
+      "title": "Realme GT 6",
+      "brand": "Realme",
+      "price": 37999,
+      "category": "Midrange",
+      "stock": 25,
+      "image": "https://images.unsplash.com/photo-1580910051074-3eb694886505"
+    },
+    {
+      "id": 6,
+      "title": "Vivo X100",
+      "brand": "Vivo",
+      "price": 54999,
+      "category": "Flagship",
+      "stock": 14,
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 7,
+      "title": "Oppo Find X6",
+      "brand": "Oppo",
+      "price": 58999,
+      "category": "Flagship",
+      "stock": 11,
+      "image": "https://images.unsplash.com/photo-1605236453806-6ff36851218e"
+    },
+    {
+      "id": 8,
+      "title": "Google Pixel 8 Pro",
+      "brand": "Google",
+      "price": 106999,
+      "category": "Premium",
+      "stock": 9,
+      "image": "https://in.static.webuy.com/product_images/Phones/Phones%20Android/SGOOPIX8P256GBUNLB_l.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Nothing Phone 2",
+      "brand": "Nothing",
+      "price": 44999,
+      "category": "Midrange",
+      "stock": 22,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab"
+    },
+    {
+      "id": 10,
+      "title": "Motorola Edge 40",
+      "brand": "Motorola",
+      "price": 29999,
+      "category": "Midrange",
+      "stock": 30,
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1580910051074-3eb694886505"
+    },
+    {
+      "id": 11,
+      "title": "iQOO Neo 9 Pro",
+      "brand": "iQOO",
+      "price": 35999,
+      "category": "Midrange",
+      "stock": 28,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97"
+    },
+    {
+      "id": 12,
+      "title": "OnePlus Nord CE 3",
+      "brand": "OnePlus",
+      "price": 26999,
+      "category": "Budget",
+      "stock": 32,
+      "rating": 4.1,
+      "image": "https://images.indianexpress.com/2023/08/oneplus-nord-ce-3-5g-review-featured.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Redmi Note 13 Pro",
+      "brand": "Redmi",
+      "price": 27999,
+      "category": "Budget",
+      "stock": 35,
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796"
+    },
+    {
+      "id": 14,
+      "title": "Poco X6 Pro",
+      "brand": "Poco",
+      "price": 26999,
+      "category": "Budget",
+      "stock": 40,
+      "rating": 4.1,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 15,
+      "title": "Asus ROG Phone 7",
+      "brand": "Asus",
+      "price": 74999,
+      "category": "Gaming",
+      "stock": 8,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97"
+    },
+    {
+      "id": 16,
+      "title": "Sony Xperia 1 V",
+      "brand": "Sony",
+      "price": 119999,
+      "category": "Premium",
+      "stock": 6,
+      "rating": 4.5,
+      "image": "https://www.gizmochina.com/wp-content/uploads/2023/05/Sony-Xperia-1-V-500x500.jpg?x10805"
+    },
+    {
+      "id": 17,
+      "title": "Samsung Galaxy A54",
+      "brand": "Samsung",
+      "price": 38999,
+      "category": "Midrange",
+      "stock": 26,
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1605236453806-6ff36851218e"
+    },
+    {
+      "id": 18,
+      "title": "Huawei P60 Pro",
+      "brand": "Huawei",
+      "price": 84999,
+      "category": "Premium",
+      "stock": 5,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1580910051074-3eb694886505"
+    },
+    {
+      "id": 19,
+      "title": "Infinix Zero 30",
+      "brand": "Infinix",
+      "price": 24999,
+      "category": "Budget",
+      "stock": 45,
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 20,
+      "title": "Lava Agni 2",
+      "brand": "Lava",
+      "price": 21999,
+      "category": "Budget",
+      "stock": 50,
+      "rating": 3.9,
+      "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab"
+    },
+    {
+      "title": "appo reno 5g",
+      "brand": "appo ",
+      "price": 34000,
+      "category": "oppo",
+      "stock": 9,
+      "rating": 4,
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRViytI60QTRwL1EFlPuNhkdPjKenClXa4Q2a2tQA9Dfboic62sTkH45dBpT9hIwAcD4BUfHw8NnNEnD8qXLntNCNhnnKcgk1yWiymbmgI_Shl_XsZzT03n5Tf6xn0EowLQIkFtig&usqp=CAc",
+      "id": 21
+    }
+  ]
+}
