@@ -56,6 +56,30 @@ function Product() {
       })
   }
 
+  const handleUpdate = (product) => {
+
+  const newTitle = prompt("Enter new title", product.title)
+  const newPrice = prompt("Enter new price", product.price)
+
+  if (!newTitle || !newPrice) return
+
+  fetch(`http://localhost:3000/mobiles/${product.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      ...product,
+      title: newTitle,
+      price: newPrice
+    })
+  })
+    .then(res => res.json())
+    .then(() => {
+      getAPI() // refresh data
+    })
+}
+
 
 
 
@@ -96,6 +120,13 @@ function Product() {
 
                 <button onClick={() => dltProduct(datas.id)} className="bg-black text-white w-full py-2 px-7 mt-2 rounded-2xl">
                   Delete Product
+                </button>
+
+                <button
+                  onClick={() => handleUpdate(datas)}
+                  className="bg-blue-600 text-white w-full py-2 px-7 mt-2 rounded-2xl"
+                >
+                  Update Product
                 </button>
               </div>
             )

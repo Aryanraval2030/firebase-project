@@ -1,16 +1,16 @@
-import './App.css'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Header from './component/header/Header'
 import Product from './component/product/Product'
 import Add from './component/addproduct/Add'
 
-import Signup from "./component/signup/Sign";
-import Login from "./component/login/Login";
-import Logout from "./component/logout/Logout";
-import useAuth from "./useAuth";
+
+// import Signup from "./component/Signup";
+// import Login from "./component/Login";
+// import Logout from "./component/Logout";
+// import useAuth from "./hooks/useAuth";
 
 function App() {
-    const user = useAuth();
+    // const user = useAuth()
 
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
 
 
 
-       <div>
+       {/* <div>
       {user ? (
         <>
           <h2>Welcome {user.email}</h2>
@@ -35,7 +35,7 @@ function App() {
           <Login />
         </>
       )}
-    </div>
+    </div> */}
     </>
   )
 }
