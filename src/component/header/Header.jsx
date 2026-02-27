@@ -17,7 +17,15 @@ function Header() {
             <li><Link to="/addproduct">add product</Link></li>
           </ul>
         </nav>
-        <button>login</button>
+
+       <div className='flex gap-2'>
+         <Link to="/login">
+          <button className="bg-blue-500 px-4 py-1 rounded">
+            Login
+          </button>
+        </Link>
+        <Link to="/signup">signup</Link>
+       </div>
       </div>
 
     </>
