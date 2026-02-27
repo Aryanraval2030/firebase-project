@@ -4,13 +4,12 @@ import Product from './component/product/Product'
 import Add from './component/addproduct/Add'
 
 
-import Signup from "./component/Signup"
-import Login from "/component/Login"
-import Logout from "/component/Logout"
-import useAuth from "/hooks/useAuth"
+import Login from "./component/Login";
+import Logout from "./component/Logout";
+import useAuth from "./hook/useAuth";
 
 function App() {
-    const user = useAuth()
+  const user = useAuth()
 
   return (
     <>
@@ -18,12 +17,14 @@ function App() {
       <Routes>
         <Route path="/product" element={<Product />} />
         <Route path="/addproduct" element={<Add />} />
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/login' element={<Logout />}></Route>
       </Routes>
 
 
 
 
-      {user ? (
+      {/* {user ? (
         <>
           <h2>Welcome {user.email}</h2>
           <Logout />
@@ -31,9 +32,10 @@ function App() {
       ) : (
         <>
           <Signup />
-          <Login />
         </>
-      )}
+      )} */}
+
+
     </>
   )
 }
