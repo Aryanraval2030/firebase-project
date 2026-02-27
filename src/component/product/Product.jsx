@@ -73,7 +73,7 @@ function Product() {
         {api.map((datas) => (
           <div
             key={datas.id}
-            className="border-2 border-black h-[400px] w-[290px] text-sm p-1"
+            className="border-2 border-black h-[500px] w-[290px] text-sm p-1"
           >
 
             <div className="h-[70%]">
