@@ -13,10 +13,10 @@
       "id": 2,
       "title": "Samsung Galaxy S24",
       "brand": "Samsung",
-      "price": 79999,
       "category": "Flagship",
-      "stock": 18,
       "rating": 4.5,
+      "stock": 18,
+      "price": 79999,
       "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf"
     },
     {
