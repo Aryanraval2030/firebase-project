@@ -4,13 +4,13 @@ import Product from './component/product/Product'
 import Add from './component/addproduct/Add'
 
 
-// import Signup from "./component/Signup";
-// import Login from "./component/Login";
-// import Logout from "./component/Logout";
-// import useAuth from "./hooks/useAuth";
+import Signup from "./component/Signup"
+import Login from "/component/Login"
+import Logout from "/component/Logout"
+import useAuth from "/hooks/useAuth"
 
 function App() {
-    // const user = useAuth()
+    const user = useAuth()
 
   return (
     <>
@@ -23,7 +23,6 @@ function App() {
 
 
 
-       {/* <div>
       {user ? (
         <>
           <h2>Welcome {user.email}</h2>
@@ -35,7 +34,6 @@ function App() {
           <Login />
         </>
       )}
-    </div> */}
     </>
   )
 }
