@@ -1,38 +1,38 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
 function Product() {
-  const [api, setApi] = useState([]);
-  const [page, setPage] = useState(0);
+  const [api, setApi] = useState([])
+  const [page, setPage] = useState(0)
 
-  const [editProduct, setEditProduct] = useState(null);
-  const [showModal, setShowModal] = useState(false);
+  const [editProduct, setEditProduct] = useState(null)
+  const [showModal, setShowModal] = useState(false)
 
-  const itemsPerPage = 4;
+  const itemsPerPage = 4
 
   // ================= FETCH DATA =================
   useEffect(() => {
     fetch("http://localhost:3000/mobiles")
       .then((res) => res.json())
-      .then((data) => setApi(data));
-  }, []);
+      .then((data) => setApi(data))
+  }, [])
 
   // ================= PAGINATION LOGIC =================
-  const totalPages = Math.ceil(api.length / itemsPerPage);
+  const totalPages = Math.ceil(api.length / itemsPerPage)
 
   const nextPage = () => {
     if (page < totalPages - 1) {
-      setPage(page + 1);
+      setPage(page + 1)
     }
-  };
+  }
 
   const prevPage = () => {
     if (page > 0) {
-      setPage(page - 1);
+      setPage(page - 1)
     }
-  };
+  }
 
-  const startIndex = page * itemsPerPage;
-  const currentItems = api.slice(startIndex, startIndex + itemsPerPage);
+  const startIndex = page * itemsPerPage
+  const currentItems = api.slice(startIndex, startIndex + itemsPerPage)
 
   // ================= DELETE =================
   const dltProduct = (id) => {
@@ -41,13 +41,13 @@ function Product() {
     }).then(() => {
       fetch("http://localhost:3000/mobiles")
         .then((res) => res.json())
-        .then((data) => setApi(data));
-    });
-  };
+        .then((data) => setApi(data))
+    })
+  }
 
   // ================= UPDATE =================
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
 
     setEditProduct({
       ...editProduct,
@@ -55,8 +55,8 @@ function Product() {
         name === "price" || name === "stock" || name === "rating"
           ? Number(value)
           : value,
-    });
-  };
+    })
+  }
 
   const handleSubmit = () => {
     fetch(`http://localhost:3000/mobiles/${editProduct.id}`, {
@@ -66,12 +66,12 @@ function Product() {
     })
       .then((res) => res.json())
       .then(() => {
-        setShowModal(false);
+        setShowModal(false)
         fetch("http://localhost:3000/mobiles")
           .then((res) => res.json())
-          .then((data) => setApi(data));
-      });
-  };
+          .then((data) => setApi(data))
+      })
+  }
 
   return (
     <div className="bg-gray-100 min-h-screen py-10 overflow-hidden">
@@ -127,8 +127,8 @@ function Product() {
 
               <button
                 onClick={() => {
-                  setEditProduct(datas);
-                  setShowModal(true);
+                  setEditProduct(datas)
+                  setShowModal(true)
                 }}
                 className="bg-blue-600 text-white w-full py-2 mt-2 rounded-xl"
               >
@@ -203,7 +203,7 @@ function Product() {
        </div>
 
     </div>
-  );
+  )
 }
 
-export default Product;
+export default Product

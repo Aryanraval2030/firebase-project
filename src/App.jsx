@@ -4,13 +4,13 @@ import Product from './component/product/Product'
 import Add from './component/addproduct/Add'
 
 
-import Signup from "./component/Signup";
+import Signup from "./component/Signup"
 
 
-import Login from "./component/Login";
-import Logout from "./component/Logout";
-import useAuth from "./hook/useAuth";
-import Home from './component/homepage/Home';
+import Login from "./component/Login"
+import Logout from "./component/Logout"
+import useAuth from "./hook/useAuth"
+import Home from './component/homepage/Home'
 
 function App() {
   const user = useAuth()

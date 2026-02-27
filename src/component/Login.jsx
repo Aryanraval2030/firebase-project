@@ -1,23 +1,23 @@
-import { useState } from "react";
-import { auth } from "../firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { useState } from "react"
+import { auth } from "../firebase"
+import { signInWithEmailAndPassword } from "firebase/auth"
 
 function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [error, setError] = useState("")
 
   const handleLogin = async (e) => {
-    e.preventDefault();
-    setError("");
+    e.preventDefault()
+    setError("")
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      alert("Login successful!");
+      await signInWithEmailAndPassword(auth, email, password)
+      alert("Login successful!")
     } catch (err) {
-      setError(err.message);
+      setError(err.message)
     }
-  };
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#f0f4f9]">
@@ -25,11 +25,7 @@ function Login() {
 
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img
-            src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-            alt="logo"
-            className="w-24"
-          />
+         <h1 className="text-2xl">my site</h1>
         </div>
 
         <h2 className="text-2xl font-medium text-center mb-6">
@@ -70,7 +66,7 @@ function Login() {
 
       </div>
     </div>
-  );
+  )
 }
 
-export default Login;
+export default Login

@@ -1,13 +1,13 @@
-import { auth } from "../firebase";
+import { auth } from "../firebase"
 
 function Logout() {
   const handleLogout = () => {
     signOut(auth)
       .then(() => alert("Logged out successfully!"))
-      .catch((error) => alert(error.message));
-  };
+      .catch((error) => alert(error.message))
+  }
 
-  return <button onClick={handleLogout}>Logout</button>;
+  return <button onClick={handleLogout}>Logout</button>
 }
 
-export default Logout;
+export default Logout

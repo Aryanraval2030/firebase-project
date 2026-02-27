@@ -1,24 +1,24 @@
-import { useState } from "react";
-import { auth } from "../firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { Link } from "react-router-dom";
+import { useState } from "react"
+import { auth } from "../firebase"
+import { createUserWithEmailAndPassword } from "firebase/auth"
+import { Link } from "react-router-dom"
 
 function Signup() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [error, setError] = useState("")
 
   const handleSignup = async (e) => {
-    e.preventDefault();
-    setError("");
+    e.preventDefault()
+    setError("")
 
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      alert("Account created successfully!");
+      await createUserWithEmailAndPassword(auth, email, password)
+      alert("Account created successfully!")
     } catch (err) {
-      setError(err.message);
+      setError(err.message)
     }
-  };
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#f0f4f9]">
@@ -97,7 +97,7 @@ function Signup() {
       </div>
 
     </div>
-  );
+  )
 }
 
-export default Signup;
+export default Signup

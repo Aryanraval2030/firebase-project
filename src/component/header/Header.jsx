@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import { Menu, User } from "lucide-react";
-import { useState } from "react";
+import { Link } from "react-router-dom"
+import { Menu, User } from "lucide-react"
+import { useState } from "react"
 
 function Header() {
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false)
 
   return (
     <div className="bg-[rgb(1,3,19)] border-b border-black px-4 h-[14vh] flex items-center justify-between text-white">
@@ -58,7 +58,7 @@ function Header() {
         </div>
       )}
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header
