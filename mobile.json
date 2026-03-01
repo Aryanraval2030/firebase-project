@@ -10,16 +10,6 @@
       "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569"
     },
     {
-      "id": 2,
-      "title": "Samsung Galaxy S24",
-      "brand": "Samsung",
-      "category": "Flagship",
-      "rating": 4.5,
-      "stock": 18,
-      "price": 79999,
-      "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf"
-    },
-    {
       "id": 3,
       "title": "OnePlus 12",
       "brand": "OnePlus",
@@ -36,7 +26,8 @@
       "price": 59999,
       "category": "Flagship",
       "stock": 20,
-      "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97"
+      "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97",
+      "rating": 5
     },
     {
       "id": 5,
