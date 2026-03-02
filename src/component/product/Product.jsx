@@ -1,4 +1,7 @@
+import { onAuthStateChanged } from "firebase/auth"
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
+import { auth } from "../../firebase"
 
 function Product() {
   const [api, setApi] = useState([])
@@ -6,6 +9,9 @@ function Product() {
 
   const [editProduct, setEditProduct] = useState(null)
   const [showModal, setShowModal] = useState(false)
+
+  const navigate = useNavigate()
+  const [user, setUser] = useState(null)
 
   const itemsPerPage = 4
 
@@ -34,8 +40,27 @@ function Product() {
   const startIndex = page * itemsPerPage
   const currentItems = api.slice(startIndex, startIndex + itemsPerPage)
 
+
+
+
+
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser)
+    })
+    return () => unsubscribe()
+  }, [])
+
   // ================= DELETE =================
   const dltProduct = (id) => {
+
+    if (!user) {
+      alert("plz login first")
+      navigate("/Login")
+      return
+    }
+
     fetch(`http://localhost:3000/mobiles/${id}`, {
       method: "DELETE",
     }).then(() => {
@@ -48,6 +73,13 @@ function Product() {
   // ================= UPDATE =================
   const handleChange = (e) => {
     const { name, value } = e.target
+
+
+    if (!user) {
+      alert("plz login first")
+      navigate("/Login")
+      return
+    }
 
     setEditProduct({
       ...editProduct,
@@ -82,7 +114,7 @@ function Product() {
 
       <div className="flex items-center justify-center gap-6">
 
-     
+
 
         {/* PRODUCTS */}
         <div className="flex gap-6">
@@ -141,7 +173,7 @@ function Product() {
         </div>
 
         {/* RIGHT ARROW */}
-     
+
 
       </div>
 
@@ -184,23 +216,23 @@ function Product() {
 
 
 
-         {/* LEFT ARROW */}
-       <div className="flex gap-5 justify-center mt-3">
-         <button
+      {/* LEFT ARROW */}
+      <div className="flex gap-5 justify-center mt-3">
+        <button
           onClick={prevPage}
           disabled={page === 0}
           className="text-3xl bg-white shadow-md rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-200 disabled:opacity-40"
         >
           ◀
         </button>
-         <button
+        <button
           onClick={nextPage}
           disabled={page === totalPages - 1}
           className="text-3xl bg-white shadow-md rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-200 disabled:opacity-40"
         >
           ▶
         </button>
-       </div>
+      </div>
 
     </div>
   )
