@@ -24,8 +24,12 @@ function Login() {
       <div className="bg-white w-[380px] p-8 rounded-3xl shadow-md">
 
         {/* Logo */}
-        <div className="flex justify-center mb-6">
-         <h1 className="text-2xl">my site</h1>
+        <div className="flex justify-center mb-6 items-center">
+          <img
+            src="https://cdn.dribbble.com/userupload/17039932/file/original-983633d1f6de58f5d871f174ff34f057.jpg?format=webp&resize=400x300&vertical=center"
+            alt="logo"
+            className="w-28 mb-6"
+          />
         </div>
 
         <h2 className="text-2xl font-medium text-center mb-6">

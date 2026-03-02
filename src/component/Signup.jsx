@@ -22,17 +22,20 @@ function Signup() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#f0f4f9]">
-      
+
       <div className="bg-white w-[900px] rounded-3xl shadow-lg flex overflow-hidden">
 
         {/* LEFT SIDE */}
         <div className="w-1/2 p-10 flex flex-col justify-center">
 
-          <img
-            src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-            alt="logo"
-            className="w-28 mb-6"
-          />
+          <div>
+            <img
+              src="https://cdn.dribbble.com/userupload/17039932/file/original-983633d1f6de58f5d871f174ff34f057.jpg?format=webp&resize=400x300&vertical=center"
+              alt="logo"
+              className="w-28 mb-6"
+            />
+          </div>
+
 
           <h2 className="text-3xl font-medium mb-2">
             Create your account

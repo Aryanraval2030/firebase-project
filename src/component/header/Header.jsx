@@ -1,16 +1,24 @@
 import { Link } from "react-router-dom"
 import { Menu, User } from "lucide-react"
 import { useState } from "react"
+import logo from "../../assets/logo.png";
+
+import { Key } from "lucide-react";
+
+
 
 function Header() {
   const [mobileMenu, setMobileMenu] = useState(false)
 
   return (
     <div className="bg-[rgb(1,3,19)] border-b border-black px-4 h-[14vh] flex items-center justify-between text-white">
-
       {/* Logo */}
-      <div className="text-xl font-bold">
-        Logo
+      <div className="h-[14vh]">
+        <img
+          src={logo}
+          alt="logo"
+          className="w-28 h-full"
+        />
       </div>
 
       {/* Desktop Menu */}
@@ -25,11 +33,16 @@ function Header() {
       {/* Desktop Auth Buttons */}
       <div className="hidden md:flex gap-3 items-center">
         <Link to="/login">
-          <button className="bg-blue-500 px-4 py-1 rounded">
-            Login
+          <button className="px-4 py-1 rounded" title="login">
+            <Key size={28} className="text-white hover:text-blue-400 transition" />
           </button>
         </Link>
-        <Link to="/signup">Signup</Link>
+
+        <Link to="/signup">
+          <button className="px-4 py-1 rounded" title="signup">
+            <User size={28} className="text-white hover:text-blue-400 transition" />
+          </button>
+        </Link>
       </div>
 
       {/* Mobile Icons */}
